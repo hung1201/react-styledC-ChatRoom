@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+:root {
+    --textColor: rgb(65, 64, 66);
+    --btnBgColor: #3287b7;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+    scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-family: "Neutrif Pro";
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button {
+    outline: none !important;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+    text-decoration: none !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.primaryBtn {
+    background-color: var(--btnBgColor);
+    color: #fff;
+    border-radius: 2em;
+    padding: 0.5em 1.5em;
+    font-size: 1.2em;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
+
+.primaryBtn:hover {
+    background-color: #3286b7c0 !important;
+}
+
+a:hover {
+    text-decoration: none !important;
+    color: #fff !important;
+}
+
+.app_layout {
+    background-color: #f2f0e4;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+.react-swipeable-view-container {
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
 }

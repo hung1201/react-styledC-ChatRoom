@@ -1,0 +1,164 @@
+.exploreContainer {
+    overflow: auto;
+    padding: 0 0.5em;
+    height: 100%;
+    padding-top: 2.4em;
+}
+
+.exploreContainer h6 {
+    font-size: 1em;
+    font-weight: 500;
+    color: #bbb;
+    margin: 1.5em 0 0.5em 0;
+}
+
+.showMore {
+    display: flex;
+    border: none !important;
+    align-items: center;
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #d3d1d1 !important;
+    color: #aaa !important;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px #ccc;
+    font-weight: 500 !important;
+    transition: all 0.2s ease;
+}
+
+.showMore:hover {
+    background-color: #aaa !important;
+    color: #d3d1d1 !important;
+}
+
+.showMore span {
+    font-size: 0.8em !important;
+    margin-top: 0.4em;
+    margin-left: 0.5em;
+}
+
+.peopleContainer img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.peopleContainer {
+    background-color: #fff;
+    margin: 0 0.5em;
+    padding: 0.5em 0.5em 1.5em 0.5em;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px #ccc;
+}
+
+.peopleContainer>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+.peopleContainer h5 {
+    color: var(--textColor);
+    font-size: 1.1em;
+    margin-bottom: 0.2em;
+}
+
+.peopleContainer p {
+    color: var(--textColor);
+    font-size: 0.9em;
+    margin: 0;
+    display: -webkit-box;
+    height: fit-content;
+    line-height: 1.1;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    color: #aaa;
+    width: 170px;
+}
+
+.peopleContainer>div>button {
+    background-color: transparent;
+    border: 1px solid var(--btnBgColor);
+    border-radius: 2em;
+    color: var(--btnBgColor);
+    font-size: 1em;
+    padding: 0.1em 1.2em;
+    transition: all 0.2s ease;
+}
+
+.peopleContainer>div>button:hover {
+    background-color: var(--btnBgColor);
+    color: #fff;
+}
+
+.conversationTitle {
+    display: flex;
+    align-items: center;
+}
+
+.conversationCard {
+    background-color: #fff;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    box-shadow: 0 2px 3px #ccc;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.conversationCard h6 {
+    color: var(--textColor);
+    font-size: 1em;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.conversationCard h6 span {
+    margin-right: 0.3em;
+}
+
+.conversationCard p {
+    margin: 0;
+    color: #aaa;
+    line-height: 1.2;
+    font-size: 0.8em;
+}
+
+.conversationCard:hover h6 span {
+    color: #45ff4e;
+    transition: all 0.3s ease;
+}
+
+.header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #f2f0e4;
+    z-index: 10;
+    padding: 0.5em;
+}
+
+.head {
+    display: flex;
+    padding: 0 7px;
+    align-items: center;
+}
+
+.head h3 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: 1.6em;
+    font-weight: 500;
+    justify-content: center;
+}
+
+.head img {
+    width: 15px;
+}

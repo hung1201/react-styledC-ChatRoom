@@ -1,0 +1,51 @@
+.homeContainer {
+    padding-top: 3.5em;
+    overflow: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 3.5em;
+    height: 100vh;
+    position: relative;
+}
+
+.homeContainer+.action_btn button {
+    background-color: transparent;
+    border: none;
+    margin-left: auto;
+}
+
+.homeContainer+.action_btn button svg {
+    font-size: 1.3em;
+}
+
+.homeContainer+.action_btn {
+    display: flex;
+    padding: 1.5em 1.5em 2em 1.5em;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(transparent 20%, #f2f0e4 80%);
+}
+
+.homeContainer+.action_btn>button:first-child {
+    border-radius: 2em;
+    background-color: #28ae61;
+    color: #fff;
+    padding: 0.3em 0.7em;
+    font-size: 1.1em;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.homeContainer+.action_btn>button:nth-child(2) {
+    line-height: 1;
+}
+
+.homeContainer+.action_btn>button:nth-child(2) svg {
+    color: var(--textColor);
+}
